@@ -1,0 +1,266 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#head{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+header::before{
+    content: "";
+    background-color: #d9cfcf;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.6;
+}
+
+header{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    border-bottom: 1px solid darkgray;
+}
+.head_class{
+    height: 47px;
+}
+header ul li a{
+    color: #706161;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+header ul li{
+    display: inline-block;
+    float: right;
+    padding: 8px 29px;
+}
+#menu-v{
+    opacity: 0;
+}
+/* section */
+section::before{
+    content: "";
+    background: url('Pictures/Wallpaper.jpg')no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 68vh;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    opacity: 0.9;
+}
+#section_elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+section h1{
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 4px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-style: normal;
+}
+#ele-0-dsng{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style:italic;
+}
+#ele-1-dsng{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    font-style:italic;
+    font-weight: bold;
+    color: white;
+}
+/* gallery heading */
+#gallery-elements h1{
+    margin-top: 29px;
+    font-size: 4rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #8c7a7a;
+}
+#underline{
+    border-bottom: 1px solid #d8d2d2;
+    margin: auto;
+    width: 289px;
+    padding-top: 2px;
+}
+/* gallery background */
+#gallery-container::before{
+    content:"";
+    background-color: #f9f9f9;
+    /* background-color: #706161; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/* gallery */
+#gallery-container{
+    position: relative;
+    height: 70rem;
+    margin-top: 0px;
+    border: 2px solid  #f9f9f9;
+}
+#gallery-imgs{
+    top: 120px;
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#gallery-imgs img{
+    margin: 11px 29px;
+    cursor: pointer;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+#gallery-imgs img:hover{
+    transition: 1s all;
+    transform: scale3d(1.2,1.2,1.2);
+}
+/* imgs width and height */
+#gallery-imgs #imgs-wh{
+    height: auto;
+    width: 370px;
+}
+#gallery-imgs #imgs-wh7{
+    height: 290px;
+    width: 370px;
+}
+.center{
+    text-align: center;
+}
+
+/* gallery height */
+@media screen and (max-width: 1320px)
+{
+    #gallery-container{
+        height: 202rem;
+    }
+}
+/* responsive design*/
+@media screen and (max-width: 650px)
+{
+    header{
+        transition: all 0.4s ease-out;
+    }
+    #menu-v{
+        opacity: 1;
+    }
+    /* navbar */
+    header ul li a{
+        font-size: 1rem;
+    }
+    header ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        float: none;
+        padding-top: 14px;
+    }
+    .h-inc-icon{
+        height: 157px;
+    }
+    .list-hide{
+        visibility: hidden;
+    }
+    .list-show{
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+
+    }
+
+   
+    /* hamburger icon dsn */
+    .burger{
+        position: absolute;
+        right: 1%;
+        top: 6px;
+    }
+    #line{
+        width: 33px;
+        height: 3px;
+        background-color: #898686;
+        margin: 4px 3px;
+    }
+    #btn{
+        color: #898686;
+        font-size: 34px;
+    }
+    .bx-x{
+        font-size: 34px;
+        position: absolute;
+        right: 1%;
+        top: 6px;
+    }
+    .bx-x-v{
+        visibility: hidden;
+    }
+    .bx-show{
+        visibility: visible;
+    }
+    /* to hide menu */
+    .bx-y-v{
+        visibility: hidden;
+    }
+    /* section */
+    section{
+        height: 57vh;
+    }
+    section h1{
+        font-size: 4.1rem;
+    }
+    /* section elements */
+    #ele-0-dsng{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    #ele-1-dsng{
+        font-size: 0.9rem;
+    }
+    /* gallery */
+    #gallery-elements h1{
+        font-size: 3.3rem;
+    }
+} 
