@@ -40,9 +40,12 @@ header ul li a{
     font-size: 1.5rem;
     font-weight: 400;
 }
+ul#list-container {
+    position: absolute;
+    right: 1%;
+}
 header ul li{
     display: inline-block;
-    float: right;
     padding: 8px 29px;
 }
 #menu-v{
@@ -186,13 +189,17 @@ section h1{
     #menu-v{
         opacity: 1;
     }
+    ul#list-container{
+        position: static;
+        right: 0%;
+    }
     /* navbar */
     header ul li a{
         font-size: 1rem;
     }
     header ul li{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         float: none;
