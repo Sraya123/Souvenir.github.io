@@ -192,14 +192,14 @@ section h1{
     }
     header ul li{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         float: none;
         padding-top: 14px;
     }
     .h-inc-icon{
-        height: 157px;
+        height: 125px;
     }
     .list-hide{
         visibility: hidden;
